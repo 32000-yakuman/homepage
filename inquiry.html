@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ノマドの窓</title>
+</head>
+<body>
+
+    <header id="header">
+        <h1>ノマドの窓</h1>
+        <h3>あなたの街の素敵な雑貨屋</h3>
+        <article>
+           <nav>
+            <ul>
+                    <li><a href="index.html">最新情報</a></li>
+                    <li><a href="shop.html">店舗案内</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li><a href="toiawase.html">お問い合わせ<a></li>
+            </ul>
+           </nav>
+         </article>
+    </header>
+    
+    <div id="container">
+        <aside>
+            <article>
+                <h3>最近の投稿</h3>
+                <ul>
+                    <li><a href="index.html#blog01">新商品が入荷しました！</a></li>
+                    <li><a href="index.html#blog02">お店の模様替えをしました</a></li>
+                    <li><a href="index.html#blog03">雨が続きますね</a></li>
+                </ul>
+            </article>
+        </aside>
+        <main>
+            <h2>お問い合わせ</h2>
+
+            <form action="confirm.html" method="post">
+                <label for="identity">名前：</label><input type="text" name="yourname" id="identity"><br><br>
+                <label for="mail">メール：</label><input type="email" name="email" id="mail"><br><br>
+            性別：<input type="radio" name="sex" value="male" id="otoko"><label for="otoko">男性</label>
+                 <input type="radio" name="sex" value="female" id="onna"><label for="onna">女性</label>
+                 <input type="radio" name="sex" value="unknown" id="mikaito"><label for="mikaito">どちらでもない</label><br><br>
+            <p>商品カテゴリ：</p>
+            <input type="checkbox" name="category" value="wear" id="huku"><label for="fuku">ウェア</label> 
+            <input type="checkbox" name="category" value="goods" id="zakka"><label for="zakka">生活雑貨</label> 
+            <input type="checkbox" name="category" value="antique" id="antique"><label for="antique">アンティーク</label><br>
+            <input type="checkbox" name="category" value="ethnic" id="ethnic"><label for="ethnic">エスニック</label> 
+            <input type="checkbox" name="category" value="stationery" id="bunbogu"><label for="bunbogu">文房具</label> 
+            <input type="checkbox" name="category" value="books" id="hon"><label for="hon">書籍</label><br><br>
+            <p>お問い合わせ内容</p>
+            <select name="toiawase">
+                <option value="handmade">ハンドメイド商品の販売</option>
+                <option value="class">教室の開催</option>
+                <option value="shouhin">商品について</option>
+                <option value="sonohoka">その他</option>
+            </select><br><br>
+            <label for="comment">コメント</label><br>
+            <textarea name="comment" id="comment" cols="40" rows="10"></textarea><br>
+
+            <input type="submit" value="送信"><br>
+            
+            </form>
+        </main>
+
+    </div>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
